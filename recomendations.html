@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slasher Film Recomendations</title>
+
+    
+   
+    
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+    </script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/recomendations.css">
+
+</head>
+<body>
+    <header>
+
+        <a href="index.html"><img class="logoimage" src="images/ghost_PNG67.png" alt="Return to Homepage" title="Return to Homepage"></a>
+        <!-- navbar -->
+        <nav id="mobilemenu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="actors.html">Actors</a></li>
+                <li><a href="recomendations.html">Recomendations</a></li>
+            </ul>
+        </nav> 
+        <h1>Slasher Scene</h1>
+    
+
+    </header>
+
+
+<main>
+    <h1>Slasher Recomendations</h1>
+    <h2>Some of my personal favorites -- Come take a look!</h2>
+    <div class="rec-list">
+
+        <div class="rec-item">
+            <img src="images/theburning.jpg" alt="The Burning">
+            <h2>The Burning (1981)</h2>
+        </div>
+
+        <div class="rec-item">
+            <img src="images/maniac.jpg" alt="Maniac">
+            <h2>Maniac (1980)</h2>
+        </div>
+
+        <div class="rec-item">
+            <img src="images/yourenext.jpg" alt="You're Next">
+            <h2>You're Next (2011)</h2>
+        </div>
+
+        <div class="rec-item">
+            <img src="images/happydeathday.jpg" alt="Happy Death Day">
+            <h2>Happy Death Day (2017)</h2>
+        </div>
+
+        <div class="rec-item">
+            <img src="images/terrifier.jpg" alt="Terrifier">
+            <h2>Terrifier (2016)</h2>
+        </div>
+
+        <div class="rec-item">
+            <img src="images/behindthemask.jpg" alt="Behind the mask">
+            <h2>Behind the Mask: The Rise of Leslie Vernon (2006)</h2>
+        </div>
+
+    </div>
+
+        <!-- Return to Top Button -->
+      <div>
+        <button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Return to top of page"><img src="images/image.png" alt=""></button>
+    </div>
+</main>
+</body>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Keagan Barker Productions</p>
+    </footer>
+</html>
+
+<script src="js/scripts.js"></script>

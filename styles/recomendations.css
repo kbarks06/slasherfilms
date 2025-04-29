@@ -1,0 +1,202 @@
+body {
+    background-color: #470909;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;  
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-image: url(../images/laurie_strode-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+header h1{
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    color: #ff1e1e;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding-right: 30px;
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main h1{
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: #ff1e1e;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #f8f5f5;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+.logoimage {
+    width: 50px;
+    height: auto;
+}
+
+/* Navigation styling */
+#nav_menu {
+    display: flex;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    text-shadow: 2px 2px 3px #000;
+    font-family: 'Cinzel', serif;
+}
+
+#nav_menu ul li a {
+    color: #ff1e1e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Cinzel', serif;
+}
+
+#nav_menu ul li a:hover {
+    color:white;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+.rec-item img {
+    width: 100%;                 
+    height: auto;                 
+    max-height: 300px;            
+    object-fit: cover;           
+    border-radius: 8px;          
+    margin-bottom: 1rem;         
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.rec-item:hover img {
+        box-shadow: 0 6px 15px rgba(255, 0, 0, 0.4); 
+}
+
+.rec-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.rec-item {
+    background-color: #2b0b0b;
+    border: 1px solid #ff1e1e;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    width: calc(33.333% - 2rem); 
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.rec-item:hover {
+    transform: scale(1);
+    box-shadow: 0 0 15px #ff1e1e;
+}
+
+.rec-item img {
+    width: auto;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.rec-item h2 {
+    color: #ff1e1e;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.rec-item p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #ccc;
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    align-self: center;
+    margin-top: 1em;
+    padding: 1em 2em;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px 2px gray;
+}
+
+.return-to-top {
+    display: none;
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 999;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.543);
+    transition: all ease-in-out 300ms;
+}
+
+.return-to-top img {
+    max-width: 50px;
+}
+
+.return-to-top:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+footer {
+    flex-basis: 100vw;
+    padding: 2em 0;
+    
+}
+footer p {
+    font-size: 80%;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: 600;
+}

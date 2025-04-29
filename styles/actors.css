@@ -1,0 +1,137 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #111;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0 ;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-image: url(../images/laurie_strode-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+
+}
+
+main {
+    padding-top: 15px;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-family: 'Cinzel', serif;
+}
+
+/* Navigation styling */
+#nav_menu {
+    display: flex;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    text-shadow: 2px 2px 3px #000;
+    font-family: 'Cinzel', serif;
+}
+
+#nav_menu ul li a {
+    color: #ff1e1e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#nav_menu ul li a:hover {
+    color:white;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+.slasher-actors {
+    padding: 40px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slasher-actors h2 {
+    color: #ff1e1e;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.actor {
+    display: flex;
+    align-items: stretch;
+    background-color: #1e1e1e;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    transition: transform 0.3s ease;
+}
+
+.actor:hover {
+    transform: scale(1);
+    box-shadow: 0 0 15px #ff1e1e;
+}
+
+.actor img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.actor-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.actor-info h3 {
+    color: #ff1e1e;
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+}
+
+.actor-info p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+footer {
+    flex-basis: 100vw;
+    padding: 2em 0;
+    
+}
+footer p {
+    font-size: 80%;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: 600;
+}
+

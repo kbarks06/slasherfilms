@@ -2,21 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+    </script>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/scripts.js"></script>
+    
+    <title>The Ultimate Slasher Guide</title>
+
+    <link rel="shortcut icon" href="images/Scream.png" type="image/x-icon">
+
 </head>
 <body>
-    <header>
-        <h2>Slasher Film Crash Course</h2>
-        <h3>Under Construction</h3>
-    </header>
-
     <main>
-        <p>This site will contain all you need to know about slasher horror films. I plan on making different pages hold the plots, characters, and information about different franchises that I personally enjoy. So page one will start with the first movie, page 2 will be second, page 3 for the third and page 4 for the fourth. This will mostly be an informative page as if the viewer wants to learn about the movies. The homepage will contain all the basic requirements that make a slasher film aswell as quick links that bring you to the other pages.</p>
+   
+        <header>
+            <img src="images/ghost_PNG67.png" alt="Homepage" class="logoimage">
+
+                 <!-- navbar -->
+                  <nav id="mobilemenu"></nav>
+                    <nav id="nav_menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="movies.html">Movies</a></li>
+                            <li><a href="actors.html">Actors</a></li>
+                            <li><a href="recomendations.html">Recomendations</a></li>
+                        </ul>
+                    </nav> 
+
+                    <div class="overlay"></div>
+                    <div class="hero-content">
+                        <h1><span class="boldtext">Slasher Scene:</span> Your Home for Horror</h1>
+                        <h2>The ultimate slasher crash course!</h2>
+                    </div>
+        </header>
+
+    
+        <h1>About This Site</h1>
+        <p>
+            Slasher films are more than just gore and screams — they’re a cultural phenomenon that has evolved over decades, carving out iconic villains, unforgettable final girls, and franchises that just won’t die.
+        </p>
+
+        <p>
+            On this site, you'll explore the rich and chilling history of slasher cinema, including:
+        </p>
+
+        <ul>
+            <li><strong>Legendary Characters:</strong> Dive into profiles of killers like Michael Myers, Freddy Krueger, and Ghostface — and their brave survivors.</li>
+            <li><strong>Famous Franchises:</strong> From <em>Halloween</em> to <em>Friday the 13th</em> to <em>Scream</em>, uncover what made these series timeless (and terrifying).</li>
+            <li><strong>Notable Actors:</strong> Learn about the actors behind the masks — and those who brought unforgettable performances to life on screen.</li>
+        </ul>
+
+        <p>
+            Whether you're a lifelong horror fan or a curious newcomer, this site will guide you through the thrills, kills, and chills of slasher films.
+        </p>
+         <!-- Return to Top Button -->
+        <div>
+            <button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Return to top of page"><img src="images/image.png" alt=""></button>
+        </div>
     </main>
 
-    <footer>
+    <script>
+        const menuBtn = document.getElementById('mobilemenu');
+        const navMenu = document.querySelector('nav ul');
+    
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 
+    <footer>
+        <p>&copy; <span id="copyright"></span> Keagan Barker Productions</p>
     </footer>
     
 </body>

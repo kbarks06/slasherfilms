@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slasher Franchises</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/movies.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#nav_menu ul').slicknav({
+            prependTo: "#mobilemenu"
+        });
+    });
+    </script>
+
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logoimage" src="images/ghost_PNG67.png" alt="Return to Homepage" title="Return to Homepage"></a>
+         <!-- navbar -->
+         <nav id="mobilemenu"></nav>
+         <nav id="nav_menu">
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="index.html">About</a></li>
+                 <li><a href="movies.html">Movies</a></li>
+                 <li><a href="actors.html">Actors</a></li>
+                 <li><a href="recomendations.html">Recomendations</a></li>
+             </ul>
+         </nav> 
+         <h1>Slasher Scene</h1>
+    </header>
+
+    
+    <main> 
+        <h1>Lets Talk Franchises</h1>
+        <div class="franchise-grid">
+            
+            <div class="franchise">
+                <h2>Scream</h2>
+                <img src="images/MV5BMjA2NjU5MTg5OF5BMl5BanBnXkFtZTgwOTkyMzQxMDE@._V1_FMjpg_UX1000_.jpg" alt="Scream Poster">
+                <div class="description">
+                    <p><strong>Debut:</strong> 1996</p>
+                    <p><strong>Killer:</strong> Ghostface (varies by film)</p>
+                    <p><strong>Description:</strong> Directed by Wes Craven, <span>Scream</span> reinvigorated the slasher genre with its meta-awareness and sharp wit. The story follows Sidney Prescott, who is hunted by various killers donning the iconic Ghostface mask. With its mix of suspense, dark humor, and commentary on horror tropes, it remains one of the most beloved franchises in horror history.</p>
+                </div>
+            </div>
+        
+            <div class="franchise">
+                <h2>Friday the 13th</h2>
+                <img src="images/HzrPn1gEHWixfMOvOehOTlHROo.webp" alt="Friday the 13th Poster">
+                <div class="description">
+                    <p><strong>Debut:</strong> 1980</p>
+                    <p><strong>Killer:</strong> Jason Voorhees (and his mother in the original)</p>
+                    <p><strong>Description:</strong> Set around the cursed Camp Crystal Lake, this franchise is synonymous with brutal kills and the silent menace of Jason Voorhees. Known for its atmospheric woods setting and creative death scenes, <span>Friday the 13th</span> helped shape the formula of the slasher subgenre through a long series of sequels and reboots.</p>
+                </div>
+            </div>
+        
+            <div class="franchise">
+                <h2>Halloween</h2>
+                <img src="images/OIP.jpg" alt="Halloween Poster">
+                <div class="description">
+                    <p><strong>Debut:</strong> 1978</p>
+                    <p><strong>Killer:</strong> Michael Myers</p>
+                    <p><strong>Description:</strong> John Carpenter's <span>Halloween</span> is considered the blueprint for modern slashers. The chilling story of Michael Myers returning to his hometown after escaping a mental institution to stalk babysitters created an enduring figure of pure evil. The eerie soundtrack and use of suspense over gore set it apart from its imitators.</p>
+                </div>
+            </div>
+        
+            <div class="franchise">
+                <h2>A Nightmare on Elm Street</h2>
+                <img src="images/OIP (1).jpg" alt="Nightmare on Elm Street Poster">
+                <div class="description">
+                    <p><strong>Debut:</strong> 1984</p>
+                    <p><strong>Killer:</strong> Freddy Krueger</p>
+                    <p><strong>Description:</strong> Freddy Krueger, with his bladed glove and burned face, terrorizes teens in their dreams in Wes Craven’s supernatural slasher. The franchise stands out for its dream logic, imaginative kills, and the increasingly twisted humor of its villain. Freddy became a pop culture icon, unlike any other slasher figure.</p>
+                </div>
+            </div>
+        
+            <div class="franchise">
+                <h2>Child's Play</h2>
+                <img src="images/OIP (2).jpg" alt="Child's Play Poster">
+                <div class="description">
+                    <p><strong>Debut:</strong> 1988</p>
+                    <p><strong>Killer:</strong> Chucky (a Good Guy doll possessed by a serial killer)</p>
+                    <p><strong>Description:</strong> What starts as a creepy story of a killer doll evolves into a wild ride of horror-comedy and absurd mayhem. Chucky, infused with the soul of killer Charles Lee Ray, slashes his way through a franchise that embraces its campy charm while never forgetting its horror roots. The series has expanded into TV and reboot territory while keeping its cult status intact.</p>
+                </div>
+            </div>
+
+            <div class="franchise">
+                <h2>The Texas Chainsaw Massacre</h2>
+                <img src="images/The-Texas-Chainsaw-Massacre-by-cineaste-designs_low.jpg" alt="Texas Chainsaw Massacre Poster">
+                <div class="description">
+                    <p><strong>Debut:</strong> 1974</p>
+                    <p><strong>Killer:</strong> Leatherface</p>
+                    <p><strong>Description:</strong> Tobe Hooper's <span>The Texas Chainsaw Massacre</span> shocked audiences with its raw, documentary-like terror and the introduction of Leatherface — a chainsaw-wielding maniac wearing human skin. The film spawned numerous sequels, reboots, and prequels, becoming a cornerstone of the slasher genre with its gritty visuals and relentless brutality.</p>
+                </div>
+            </div>
+           
+        </div>
+        
+
+                <!-- Return to Top Button -->
+            <div>
+                <button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Return to top of page"><img src="images/image.png" alt=""></button>
+            </div>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Keagan Barker Productions</p>
+    </footer>
+</body>
+</html>
+
+<script src="js/scripts.js"></script>

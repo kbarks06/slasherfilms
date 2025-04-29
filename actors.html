@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slasher Actors</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/actors.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+    </script>
+
+    <link rel="stylesheet" href="styles/movies.css">
+    
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logoimage" src="images/ghost_PNG67.png" alt="Return to Homepage" title="Return to Homepage"></a>
+
+         <!-- navbar -->
+         <nav id="mobilemenu"></nav>
+         <nav id="nav_menu">
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="index.html">About</a></li>
+                 <li><a href="movies.html">Movies</a></li>
+                 <li><a href="actors.html">Actors</a></li>
+                 <li><a href="recomendations.html">Recomendations</a></li>
+             </ul>
+         </nav> 
+         <h1>Slasher Scene</h1>
+    </header>
+    <main>
+    <section class="slasher-actors">
+        <h2>Top Actors in Slasher Films</h2>
+    
+        <div class="actor">
+            <img src="images/OIP (3).jpg" alt="Jamie Lee Curtis">
+            <div class="actor-info">
+                <h3>Jamie Lee Curtis</h3>
+                <p><strong>Known for:</strong> Halloween Series</p>
+                <p>Often dubbed the original "Scream Queen," Jamie Lee Curtis rose to fame with her iconic role as Laurie Strode. Her performance helped define the final girl trope in horror films.</p>
+            </div>
+        </div>
+    
+        <div class="actor">
+            <img src="images/s-l1600.jpg" alt="Neve Campbell">
+            <div class="actor-info">
+                <h3>Neve Campbell</h3>
+                <p><strong>Known for:</strong> Scream Series</p>
+                <p>As Sidney Prescott, Neve Campbell brought strength and vulnerability to the genre, leading the Scream franchise and redefining what it means to be a modern final girl.</p>
+            </div>
+        </div>
+    
+        <div class="actor">
+            <img src="images/OIP (4).jpg" alt="Robert Englund">
+            <div class="actor-info">
+                <h3>Robert Englund</h3>
+                <p><strong>Known for:</strong> A Nightmare on Elm Street</p>
+                <p>Robert Englund’s portrayal of Freddy Krueger is legendary. His mix of menace and charisma turned Freddy into one of the most recognizable horror villains ever.</p>
+            </div>
+        </div>
+    
+        <div class="actor">
+            <img src="images/z2LYR7Ickql7g5hnWJSIAWMPD4o.webp" alt="Brad Dourif">
+            <div class="actor-info">
+                <h3>Brad Dourif</h3>
+                <p><strong>Known for:</strong> Child's Play Series (Voice of Chucky)</p>
+                <p>With a sinister voice and maniacal charm, Brad Dourif brought life to Chucky, transforming a doll into one of the most iconic killers in horror history.</p>
+            </div>
+        </div>
+    
+        <div class="actor">
+            <img src="images/Danielle_Harris.webp" alt="Danielle Harris">
+            <div class="actor-info">
+                <h3>Danielle Harris</h3>
+                <p><strong>Known for:</strong> Halloween 4 and 5, Hatchet series</p>
+                <p>A horror veteran from a young age, Danielle Harris is beloved by fans for her roles in multiple Halloween films and the blood-soaked Hatchet franchise.</p>
+            </div>
+        </div>
+    </section>
+
+      <!-- Return to Top Button -->
+      <div>
+        <button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Return to top of page"><img src="images/image.png" alt=""></button>
+    </div>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="copyright"></span> Keagan Barker Productions</p>
+    </footer>
+</body>
+</html>
+
+<script src="js/scripts.js"></script>

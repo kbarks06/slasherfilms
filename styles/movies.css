@@ -1,0 +1,260 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #470909;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-image: url(../images/laurie_strode-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.logoimage {
+    width: 50px;
+    height: auto;
+}
+
+/* Navigation styling */
+#nav_menu {
+    display: flex;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    text-shadow: 2px 2px 3px #000;
+    font-family: 'Cinzel', serif;
+}
+
+#nav_menu ul li a {
+    color: #ff1e1e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#nav_menu ul li a:hover {
+    color:white;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    color: #ff1e1e;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding-right: 30px;
+}
+
+.franchise {
+    background-color: #131212;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.franchise img {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.franchise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.franchise:hover {
+    transform: scale(1);
+    box-shadow: 0 0 15px #ff1e1e;
+}
+.description {
+    overflow: hidden;
+}
+
+h2 {
+    color: #ff1e1e;
+    margin-top: 0;
+    font-family: 'Cinzel', serif;
+}
+
+span {
+    font-style: italic;
+}
+
+.btn{
+    display: inline-block;
+    align-self: center;
+    margin-top: 1em;
+    padding: 1em 2em;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px 2px gray;
+}
+
+.return-to-top{
+    display: none;
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 999;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.543);
+    transition: all ease-in-out 300ms;
+}
+
+.return-to-top img{
+    max-width: 50px;
+}
+
+.return-to-top:hover{
+    background-color: rgb(255, 0, 0);
+}
+footer {
+    flex-basis: 100vw;
+    padding: 2em 0;
+    
+}
+footer p {
+    font-size: 80%;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: left; 
+        margin-left: 0; 
+        flex-grow: 1; 
+    }
+
+    h2{
+       align-content: center;
+    }
+
+    main h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+    
+    .logoimage {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 15px;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 1em;
+        border-radius: 10px;
+        z-index: 3;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    #mobilemenu{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid #ff1e1e;
+        padding: 0.5em;
+        border-radius: 6px;
+        cursor: pointer;
+        z-index: 5;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    #nav_menu {
+        display: none;
+        
+    }
+
+    .franchise-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        justify-items: center; /* This will center the grid items */
+    }
+
+    .franchise {
+        margin-bottom: 1.5rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #131212;
+    }
+
+    .franchise img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    .franchise h2 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .return-to-top {
+        display: block;
+    }
+}
