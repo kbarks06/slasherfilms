@@ -29,7 +29,7 @@ main {
 }
 
 h2{
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 h3{
@@ -135,3 +135,80 @@ footer p {
     font-weight: 600;
 }
 
+
+@media screen and (max-width: 768px) {
+
+.logoimage{
+    display: none;
+}
+
+#mobilemenu {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+}
+
+/* SlickNav styles */
+.slicknav_menu {
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.slicknav_btn {
+    border: 2px solid #ff1e1e;
+    padding: 0.5em;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #ff1e1e;
+    text-shadow: 1px 1px 2px black;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.slicknav_nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1em;
+    border-radius: 10px;
+    margin-top: 0.5em;
+}
+
+.slicknav_nav a {
+    color: #ff1e1e ;
+    font-weight: bold;
+    display: block;
+    padding: 0.5em 0;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.slicknav_nav a:hover {
+    color: white ;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+
+#nav_menu {
+    display: none;
+}
+
+header {
+    justify-content: flex-end;
+    padding: 10px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.slasher-actors h2 {
+    font-size: 2rem; 
+}
+
+.slasher-actors {
+    padding: 40px 20px 40px 20px; 
+}
+}

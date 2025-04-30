@@ -63,7 +63,7 @@ h1 {
     font-size: 3.5rem;
     color: #ff1e1e;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     padding-right: 30px;
@@ -159,6 +159,7 @@ footer p {
 
 
 @media (max-width: 768px) {
+    
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -172,8 +173,8 @@ footer p {
         flex-grow: 1; 
     }
 
-    h2{
-       align-content: center;
+    h2 {
+        align-content: center;
     }
 
     main h1 {
@@ -182,44 +183,58 @@ footer p {
         margin: 20px auto;
         padding: 0 10px;
     }
-    
+
     .logoimage {
         display: none;
     }
 
-    nav ul {
+    #nav_menu {
         display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 15px;
-        background-color: rgba(0, 0, 0, 0.9);
-        padding: 1em;
-        border-radius: 10px;
-        z-index: 3;
     }
 
-    nav ul.active {
-        display: flex;
-    }
-
-    #mobilemenu{
+    #mobilemenu {
         display: block;
         position: absolute;
         top: 15px;
         right: 15px;
-        background-color: rgba(255, 255, 255, 0.1);
+        z-index: 999;
+    }
+
+    /* SlickNav styles */
+    .slicknav_menu {
+        background-color: transparent;
+        z-index: 1000;
+    }
+
+    .slicknav_btn {
         border: 2px solid #ff1e1e;
         padding: 0.5em;
         border-radius: 6px;
         cursor: pointer;
-        z-index: 5;
+        color: #ff1e1e;
+        text-shadow: 1px 1px 2px black;
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    #nav_menu {
-        display: none;
-        
+    .slicknav_nav {
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 1em;
+        border-radius: 10px;
+        margin-top: 0.5em;
+    }
+
+    .slicknav_nav a {
+        color: #ff1e1e;
+        font-weight: bold;
+        display: block;
+        padding: 0.5em 0;
+        text-decoration: none;
+        border-bottom: 1px solid #333;
+    }
+
+    .slicknav_nav a:hover {
+        color: white;
+        background-color: rgba(255, 0, 0, 0.2);
     }
 
     .franchise-grid {
@@ -229,7 +244,7 @@ footer p {
         max-width: 100%;
         margin: 0 auto;
         padding: 0 20px;
-        justify-items: center; /* This will center the grid items */
+        justify-items: center;
     }
 
     .franchise {
@@ -252,9 +267,5 @@ footer p {
 
     .description {
         font-size: 1rem;
-    }
-
-    .return-to-top {
-        display: block;
     }
 }
