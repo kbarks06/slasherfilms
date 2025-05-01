@@ -64,7 +64,7 @@ main h2 {
     height: auto;
 }
 
-/* Navigation styling */
+/* Nav Menu */
 #nav_menu {
     display: flex;
 }
@@ -156,6 +156,8 @@ main h2 {
     text-align: center;
 }
 
+/* Return To Top Button */
+
 .btn{
     display: inline-block;
     align-self: center;
@@ -200,6 +202,8 @@ footer p {
     text-align: center;
     font-weight: 600;
 }
+
+/* Media Query */
 
 @media screen and (max-width: 768px) {
 

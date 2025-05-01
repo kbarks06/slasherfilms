@@ -28,7 +28,7 @@ header {
     height: auto;
 }
 
-/* Navigation styling */
+/* Nav Menu */
 #nav_menu {
     display: flex;
 }
@@ -113,6 +113,8 @@ span {
     font-style: italic;
 }
 
+/* Return To Top Button */
+
 .btn{
     display: inline-block;
     align-self: center;
@@ -157,6 +159,7 @@ footer p {
     font-weight: 600;
 }
 
+/* Media Query */
 
 @media (max-width: 768px) {
     

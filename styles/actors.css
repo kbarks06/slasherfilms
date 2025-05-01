@@ -36,7 +36,7 @@ h3{
     font-family: 'Cinzel', serif;
 }
 
-/* Navigation styling */
+/* Nav Menu */
 #nav_menu {
     display: flex;
 }
@@ -135,6 +135,7 @@ footer p {
     font-weight: 600;
 }
 
+/* Media Query */
 
 @media screen and (max-width: 768px) {
 
